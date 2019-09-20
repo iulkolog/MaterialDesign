@@ -16,6 +16,35 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:onClick="hide"
+            android:text="Hide" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:onClick="show"
+            android:text="Show" />
+
+        <ProgressBar
+            android:id="@+id/progress_roundbar_activity"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        </ProgressBar>
+
+        <ProgressBar
+            android:id="@+id/progress_linebar_activity"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        </ProgressBar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
